@@ -1,0 +1,21 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-08-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<aura:component implements="flexipage:availableForAllPageTypes">
+   <lightning:card iconName="standard:account">
+   <aura:set attribute="actions">
+    <c:buttonsamp></c:buttonsamp>
+   </aura:set>
+   <c:auraattribute></c:auraattribute>
+   <aura:set attribute="title">
+    account
+    <p>true bays</p>
+   </aura:set>
+   </lightning:card>
+   <c:aurainput></c:aurainput>
+</aura:component>	

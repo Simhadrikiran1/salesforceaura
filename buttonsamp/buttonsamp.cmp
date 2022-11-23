@@ -1,0 +1,25 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-08-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component>
+    <lightning:buttonGroup>
+       
+        <lightning:button variant="base" label="Base" title="Base action"/>
+        <lightning:buttonMenu alternativeText="Show menu">
+            <lightning:menuItem value="MenuItemOne" label="Menu Item One" />
+            <lightning:menuSubheader value="MenuItemOne" label="Menu Item One" />
+            <lightning:menuItem value="MenuItemTwo" label="Menu Item Two" />
+            <lightning:menuItem value="MenuItemThree" label="Menu Item Three" />
+            <lightning:menuItem value="MenuItemFour" label="Menu Item Four" />
+        </lightning:buttonMenu>
+         <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning:button variant="brand" label="Brand" title="Brand action" onclick="{! c.handleClick }" />
+
+    <!-- Brand-outline variant: Identifies the primary action in a group of buttons, but has a lighter look -->
+    <lightning:button variant="brand-outline" label="Brand Outline" title="Brand action" onclick="{! c.handleClick }" />    
+    </lightning:buttonGroup>
+</aura:component>	

@@ -1,0 +1,20 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-08-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component>
+    <lightning:card>
+        <aura:set attribute="footer">
+            <lightning:button variant="base" label="submit" title="submit" onclick="{!c.submitclick}"/>
+
+        </aura:set>
+        <lightning:input type="String" label="Name" aura:id="empname"  />
+      <lightning:input type="Integer" label="salary" aura:id="empsalary"  />
+      <lightning:input type="Integer"  label="Age" aura:id="empage"  />
+    </lightning:card>
+    
+    
+</aura:component>	

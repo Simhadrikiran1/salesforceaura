@@ -1,0 +1,29 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-09-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component>
+  <aura:attribute name="num1" type="Integer"  />
+  <aura:attribute name="num2" type="Integer"  />
+  <aura:attribute name="result" type="Integer"  />
+  <aura:attribute name="positive" type="Boolean" default="false"/>
+  <lightning:card title="Calculator" class="cards" >
+    <div>
+   
+      <img src="{!$Resource.salesforceLOGO}" alt="User avatar" />
+    </div>
+   <lightning:input name="num1" label="FirstNumber" value="{!v.num1}"/>  
+   <lightning:input name="num2" label="SecondNumber" value="{!v.num2}"/>  
+   
+   <lightning:button variant="base" label="sUBMIT" title="Available" onclick="{!c.mult}"/> 
+  </lightning:card>
+  <lightning:card>
+    <aura:if isTrue="{!v.positive}">
+      <lightning:input name="result" label="Result" value="{!v.result}"/> 
+    </aura:if>
+   
+  </lightning:card>
+</aura:component>	

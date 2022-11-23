@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-08-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component>
+    <aura:attribute name="name" type="String" default="defValue" />
+    <aura:attribute name="username" type="String" default="defValue" />
+      <lightning:input name="Name" type="text" value="{!v.name}"/>
+      <lightning:input name="DOB" type="Date"/>
+      <lightning:input name="DOB TIME" type="Time"/>
+      <lightning:input name="Email" type="Email"/>
+      <lightning:input name="Phone" type="Phone"/>
+      <lightning:input name="username" type="text" value="{!v.username}" required="true"/>
+      <lightning:input name="Password" type="Password" required="true"/>
+</aura:component>	

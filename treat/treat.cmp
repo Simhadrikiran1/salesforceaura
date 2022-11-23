@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-23-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component implements="flexipage:availableForAllPageTypes">
+  <aura:attribute name="acc" type="Account" default="{sObjectType:'Account'}" />
+  <lightning:card>
+    <aura:set attribute="actions">
+         <lightning:button variant="base" label="Show" title="Show" onclick="{!c.handler}"/>
+    </aura:set>
+    
+    <lightning:input label="Name"  value="{!v.acc.Name}"/>
+    <lightning:input label="Phone"  value="{!v.acc.Phone}"/>
+</lightning:card>
+
+</aura:component>	

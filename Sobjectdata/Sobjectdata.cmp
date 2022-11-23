@@ -1,0 +1,33 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 11-10-2022
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<aura:component>
+    <aura:attribute name="acc" type="Account" default="{sObjectType:'Account'}" />
+    <aura:attribute name="con" type="Contact" default="{sObjectType:'Contact'}" />
+  
+<lightning:card>
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem size="3" padding="around-small">
+            <lightning:input label="AccountName"  value="{!v.acc.Name}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="3" padding="around-small">
+            <lightning:input label="AccountPhone"  value="{!v.acc.Phone}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="3" padding="around-small">
+            <lightning:input label="ContactFirstName"  value="{!v.con.FirstName}"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem size="3" padding="around-small">
+            <lightning:input label="ContactLastName"  value="{!v.con.LastName}"/>
+        </lightning:layoutItem>
+        
+            <lightning:button variant="base" label="Show" title="Show" onclick="{!c.handler}"/>
+    
+      
+    </lightning:layout>
+</lightning:card>
+
+</aura:component>	
